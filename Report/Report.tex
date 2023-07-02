@@ -39,7 +39,8 @@ Evolutionary Algorithms (EAs), particularly, genetic algorithms (GA), are known 
 \subsection{MOEAs}
 
 \subsection{Noise}
-
+In a real-world black-box problem, noise takes various forms and can be stochastic in nature. In such cases, the effect of noise could lead to misleading non-dominating solutions which might actually be dominated for a true noiseless problem. \\
+In modelling noise as a factor, various researchers have adopted different approaches. Bui \textit{et al.} \cite{bui2005} use an additive factor which are randomly added or subtracted from the real fitness value, such that $F_{noise} = F + noise$, where $F_{noise}$ is fitness function with presence of noise and $F$ is the true fitness function. Fieldsend \textit{et al.} \cite{fieldsend2015} consider a gaussian function of noise to be added with $\mathcal{N} \sim (0, \sigma^{2})$, i.e., a zero-mean isotropic Gaussian noise with standard deviation ($\sigma$) of a constant real number. They consider multiple standard deviation inputs of \{0.00, 0.01, 0.10, 1.00\}, where $\sigma = 0.00$ is the true, noiseless fitness function.
 \subsection{Performance metrics}
 
 
@@ -47,9 +48,9 @@ Evolutionary Algorithms (EAs), particularly, genetic algorithms (GA), are known 
 \subsection{Problem}
 
 \subsection{Algorithms}
-
+The three MOEAs selected in this study are NSGA-II, SPEA2, and RTEA.
 \subsection{Noise magnitude}
-
+The noise magnitude considered in this study are both of gaussian and random additive nature. A zero-mean isotropic gaussian noise with standard deviation magnitudes of $\sigma = \{0.00, 0.01, 0.05, 0.1, 1.00\}$ are considered, whilst random additive noise of \verb|random(0,0.1)| is randomly added or subtracted directly to the objective function(s).
 \subsection{Performance metrics}
 
 \section{Results}

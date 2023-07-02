@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.12)  1 JUL 2023 23:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.12)  2 JUL 2023 00:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -263,7 +263,7 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box55
 )
-No file Report.aux.
+(./Report.aux)
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -280,6 +280,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
+
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -325,38 +326,27 @@ LaTeX Warning: Citation `bui2005' on page 1 undefined on input line 36.
 LaTeX Warning: Citation `bui2005' on page 1 undefined on input line 36.
 
 
-LaTeX Warning: Reference `AA' on page 1 undefined on input line 44.
+LaTeX Warning: Citation `bui2005' on page 1 undefined on input line 43.
 
 
-LaTeX Warning: Reference `SCM' on page 1 undefined on input line 44.
+LaTeX Warning: Citation `fieldsend2015' on page 1 undefined on input line 43.
+
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 4
+3.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5
+3.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-LaTeX Warning: Citation `b1' on page 1 undefined on input line 60.
-
-
-LaTeX Warning: Citation `b2' on page 1 undefined on input line 61.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 63.
-
-
-LaTeX Warning: Citation `b4' on page 1 undefined on input line 71.
-
-
-LaTeX Warning: Citation `b5' on page 1 undefined on input line 72.
-
-
-LaTeX Warning: Citation `b6' on page 1 undefined on input line 77.
-
+]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -368,38 +358,36 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
 [2
 
 ] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4198 strings out of 476024
- 65616 string characters out of 5790018
- 1865388 words of memory out of 5000000
- 24618 multiletter control sequences out of 15000+600000
- 549188 words of font info for 103 fonts, out of 8000000 for 9000
+ 4256 strings out of 476024
+ 66536 string characters out of 5790018
+ 1864388 words of memory out of 5000000
+ 24666 multiletter control sequences out of 15000+600000
+ 549703 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,62p,1235b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on Report.pdf (2 pages, 66510 bytes).
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on Report.pdf (2 pages, 115242 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
