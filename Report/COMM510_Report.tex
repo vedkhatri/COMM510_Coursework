@@ -1,6 +1,7 @@
 %----- do not modify this first block,
 
 \documentclass[sigconf,nonacm]{acmart}
+\usepackage{tabular}
 
 
 \begin{document}
@@ -16,17 +17,45 @@
 \maketitle
 
 \section{Introduction}
-The use of Evolutionary Algorithms (EA) have been popular in solving multi-objective optimisation problems (MOP) due to their population-based approach that enables generation of several elements of the Pareto optimal set in a single run. These are particularly effective in solving complex MOPs with very large spaces, uncertainty, noise, disjoint Pareto curves, etc. Some examples of Multi-objective Evolutionary Algorithms (MOEA) are MOGA, NPGA, NSGA, NSGA-II, PAES, SPEA, SPEA2 and $\epsilon$-MOEA\cite{moea2007, deb2002}. Selecting an efficient MOEA towards solving MOPs of complex nature is crucial to yield accurate optimal points, especially when there is a computational cost attached to it. Performance Indicators (PI) are metrics that are helpful in comparing multiple MOEAs to determine their efficiencies. There are several PIs that exist in the literature in ranking MOEA. These are broadly divided as per cardinality, convergence, distribution, and both convergence and distribution. Their description is provided in section 2. This project explores the correlation between the run time and ranking of two MOEAs using different PIs.
+The use of Evolutionary Algorithms (EA) have been popular in solving multi-objective optimisation problems (MOP) due to their population-based approach that enables generation of several elements of the Pareto optimal set in a single run. These are particularly effective in solving complex MOPs with very large spaces, uncertainty, noise, disjoint Pareto curves, etc. Some examples of Multi-objective Evolutionary Algorithms (MOEA) are MOGA, NPGA, NSGA, NSGA-II, PAES, SPEA, SPEA2 and $\epsilon$-MOEA\cite{moea2007, deb2002}. Selecting an efficient MOEA towards solving MOPs of complex nature is crucial to yield accurate optimal points, especially when there is a computational cost attached to it. Performance Indicators (PI) are metrics that are helpful in comparing and ranking multiple MOEAs to determine their efficiencies. There are several PIs that exist in the literature in ranking MOEA. These are broadly divided as per cardinality, convergence, distribution, and both convergence and distribution. Their description is provided in section 2. This project explores the correlation between the run time and ranking of two MOEAs using different PIs.
 
 \balance
 
 \section{Background}
 \subsection{Multi-objective Evolutionary Algorithms}
-A multi-objective optimisation problem (MOP) \\
+A multi-objective optimisation problem (MOP) has a number of objective functions which are to be minimised or maximised \cite{deb2001}.\\ A MOP is defined in general form as:
+\begin{align*}
+	\textbf{Minimize/Maximize} \hspace{0.1cm}
+    & f_m(\textbf{x}), \hspace{0.2cm}
+    & m = 1, 2, \ldots, M; \\
+    \textbf{Subject to} \hspace{0.1cm}
+    & g_{j}(\textbf{x}) \ge 0, \hspace{0.2cm}
+    & j = 1, 2, \ldots, J; \\
+    & h_{k} = 0, \hspace{0.2cm}
+    & k = 1, 2, \ldots, K; \\
+    & x_{i}^{(L)} \le x_{i} \le x_{i}^{(U)}, \hspace{0.2cm}
+    & i = 1, 2, \ldots, n
+\end{align*}
+A solution \textbf{x} is a vector of \textit{n} decision variables: $\textbf{x} = (x_{1}, x_{2}, \ldots, x_{n})^{T}$. The last set of constraints, $x_{i}^{(L)} \le x_{i} \le x_{i}^{(U)}$, are called variable bounds, restricting each decision variables $x_{i}$ to take a value with a lower $x_{i}^{(L)}$ and an upper $x_{i}^{(U)}$ bound, constituting of the design space $\mathcal{D}$ \cite{deb2002}. "Classical" multi-objective algorithms, such as direct methods and gradient-based methods, are used in solving simple, convex optimisation problems.\\
+Deb \cite{deb2002} lists the challenges that "classical" multi-objective algorithms are faced with -
+\begin{enumerate}
+\item The convergence to an optimal solution depends on the chosen initial solution.
+\item Most algorithms tend to get stuck to a suboptimal solution.
+\item An algorithm that is efficient in solving one optimisation problem might prove inefficient in solving a different problem.
+\item Algorithms are not efficient in handling problems having a discrete search space.
+\item Algorithms cannot be efficiently used on a parallel machine.
+\end{enumerate}
+In such cases, Evolutionary Algorithms prove to be effective in finding optimum solutions to different multi-objective optimisation problems, often simulating complex, real-world design problems. They are advantageous over classical algorithms in the following way \cite{branke2008}:
+\begin{enumerate}
+\item EAs adopt population-based search, i.e., it generates more than one solution in an iteration. This provides parallel processing power, that helps in achieving a computationally quick overall search. It also finds multiple optimal solutions, thereby facilitating the solution of a multi-modal and multi-objective optimisation problem.
+\item EAs adopt a stochastic approach rather than a deterministic approach, yielding to desired outcomes by using biased probability distributions.
+\item EAs do not usually use gradient information in their search process. Their approach is more direct, enabling them to be used to a wide variety of optimisation problems.
+\end{enumerate}
+
 The two MOEAs considered in this study are NSGA-II and SPEA2.
-\subsubsection{NSGA, NSGA-II, NSGA-III}
+\subsubsection{NSGA-II}
 Non-dominated Sorting Genetic Algorithm
-\subsubsection{SPEA, SPEA2}
+\subsubsection{SPEA2}
 \subsection{Performance Indicators}
 Performance Indicators for MOEAs are broadly categorised into four aspects \cite{audet2022}:
 \begin{enumerate}
@@ -39,11 +68,22 @@ There are several performance indicators described in the literature by various 
 
 \section{Methodology and experimental design}
 \subsection{Problems used}
-There are three problems used from the multi-objective test suite in Pymoo - ZDT1, ZDT2, and ZDT3, to perform analysis.
+There are a range of problems used in this study, extracted from the \textit{jMetalPy} Python module, namely ZDT1, ZDT2, ZDT3, ZDT4, ZDT6, DTLZ1, DTLZ2, DTLZ3, DTLZ4, DTLZ5, DTLZ6, and DTLZ7, to perform analysis. These problem types are diverse in nature, and their characteristics are tabulated below.\\
+\begin{tabular}{|c|c|c|}
+\hline
+Problem type & Nr. of objectives & Nr. of variables & Problem description \\
+\hline
+ZDT1 & 2 & 30 & Continuous, convex pareto front
+ZDT2 & 2 & 30 & Continuous, non-convex pareto front
+ZDT3 & 2 & 30 &
+ZDT4 & 2 & 30 & Continuous, convex pareto front
+ZDT6 & 2 & 30 &
+\hline
+\end{tabular}
 \subsection{MOEAs used}
-The two MOEAs used for analysis is Non-dominated Sorting Genetic Algorithm (NSGA-II) and Strength Pareto Evolutionary Algorithm 2 (SPEA2).
+The two MOEAs used for analysis is Non-dominated Sorting Genetic Algorithm (NSGA-II) and Strength Pareto Evolutionary Algorithm 2 (SPEA2). Their characteristics were described in section 2. The NSGA-II and SPEA2 methods are pre-defined in the \textit{jMetalPy} Python module, and were utilised with the following arguments to perform analysis.
 \subsection{Performance Indicators}
-The three performance indicators used for analysis are IGD (convergence-focussed), Diversity Indicator (distribution-focussed), and hyperarea difference (convergence- and distribution-focussed). The hyperarea difference is considered over hypervolume indicator as the MOPs considered are two-dimensional in nature.
+The three performance indicators used for analysis are IGD (convergence-focussed), Diversity Indicator (distribution-focussed), and hyperarea difference (convergence- and distribution-focussed for ZDT problems) or hypervolume indicator (for DTLZ problems).
 
 \section{Analysis and results}
 

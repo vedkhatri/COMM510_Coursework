@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65ac7d71-93e5-4770-a304-45798db2d358" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/MOEA_PI.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MOEA_PI.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/COMM510_Report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/Report/COMM510_Report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/COMM510_Report.log" beforeDir="false" afterPath="$PROJECT_DIR$/Report/COMM510_Report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/COMM510_Report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/COMM510_Report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/COMM510_Report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Report/COMM510_Report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/COMM510_Report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Report/COMM510_Report.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Report/references.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jMetalPy/jmetal/lab/visualization/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/jMetalPy/jmetal/lab/visualization/plotting.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SIfRdpi2PhdkeejffHnNw0IB2t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65ac7d71-93e5-4770-a304-45798db2d358" name="Changes" comment="" />
+      <created>1688839009287</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688839009287</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
